@@ -823,43 +823,100 @@ section {
 }
 
 /* Desktop card variant */
-.mock-desktop {
-  width: 200px;
-  height: 140px;
+.mock-browser {
+  width: 260px;
+  height: 180px;
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.12);
-  background: rgba(0, 0, 0, 0.75);
-  overflow: hidden;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
-  transform: perspective(800px) rotateY(-6deg) rotateX(4deg) translateY(-10px);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.proj-card:hover .mock-desktop {
-  transform: perspective(800px) rotateY(0deg) rotateX(0deg) translateY(-16px);
-}
-
-.mock-desktop-bar {
-  height: 18px;
-  background: rgba(255, 255, 255, 0.05);
-  display: flex;
-  align-items: center;
-  padding: 0 8px;
-  gap: 4px;
-}
-
-.mock-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.mock-desktop-body {
-  padding: 8px;
+  border: 5px solid #1c1c1c;
+  background: #000;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 40px 80px rgba(0, 0, 0, 0.85);
+  transform: perspective(800px) rotateY(-6deg) rotateX(4deg) translateY(-10px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.proj-card:hover .mock-browser {
+  transform: perspective(800px) rotateY(0deg) rotateX(0deg) translateY(-18px);
+}
+
+.mock-browser {
+  width: 330px;
+  height: 165px;
+  border-radius: 8px;
+  border: 4px solid #1c1c1c;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 30px 60px rgba(0, 0, 0, 0.85);
+  transform: perspective(600px) rotateY(-4deg) rotateX(3deg) translateY(-10px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.proj-card:hover .mock-browser {
+  transform: perspective(600px) rotateY(0deg) rotateX(0deg) translateY(-16px);
+}
+
+.mock-browser-bar {
+  height: 20px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  gap: 6px;
+  flex-shrink: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mock-browser-dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.mock-browser-url {
+  flex: 1;
+  height: 11px;
+  background: #111;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.4rem;
+  color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  letter-spacing: 0.04em;
+}
+
+.mock-browser-screen {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.mock-browser-screen .mock-screen-img {
+  inset: 0;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.proj-card.decatur .proj-mock {
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
 }
 
 /* Card info overlay */
