@@ -719,7 +719,7 @@ section {
   background: linear-gradient(160deg, #1a0e06 0%, #2d1500 40%, #f5a040 100%);
 }
 .proj-card.fixupja .proj-card-bg {
-  background: linear-gradient(160deg, #050e1a 0%, #071428 40%, #0066cc 100%);
+  background: linear-gradient(160deg, #191a05 0%, #282507 40%, #ccc500 100%);
 }
 .proj-card.decatur .proj-card-bg {
   background: linear-gradient(160deg, #050c05 0%, #0a1c0a 40%, #2e7d32 100%);
@@ -968,8 +968,8 @@ section {
   border-color: rgba(245, 160, 64, 0.35);
 }
 .proj-card.fixupja .proj-type {
-  color: #5bb3ff;
-  border-color: rgba(91, 179, 255, 0.35);
+  color: #fffa5b;
+  border-color: rgba(255, 239, 91, 0.35);
 }
 .proj-card.decatur .proj-type {
   color: #6fcf6f;
@@ -1156,6 +1156,49 @@ section {
   margin-bottom: 5rem;
   padding-bottom: 5rem;
   border-bottom: 1px solid var(--border);
+}
+
+.screen-phone-frame {
+  width: 200px;
+  height: 400px;
+  border-radius: 22px;
+  border: 5px solid #1c1c1c;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 30px 60px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.screen-phone-frame .screen-phone-bar {
+  height: 16px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.screen-phone-inner {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.screen-real-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 @media (max-width: 768px) {
