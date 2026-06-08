@@ -828,25 +828,6 @@ section {
   border-opacity: 0.3;
 }
 
-/* Desktop card variant */
-.mock-browser {
-  width: 260px;
-  height: 180px;
-  border-radius: 10px;
-  border: 5px solid #1c1c1c;
-  background: #000;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.07),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 40px 80px rgba(0, 0, 0, 0.85);
-  transform: perspective(800px) rotateY(-6deg) rotateX(4deg) translateY(-10px);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  flex-shrink: 0;
-}
-
 .proj-card:hover .mock-browser {
   transform: perspective(800px) rotateY(0deg) rotateX(0deg) translateY(-18px);
 }
@@ -939,6 +920,146 @@ section {
   margin-bottom: 7rem;
 }
 
+.proj-card.blaze .proj-card-bg {
+  background: linear-gradient(160deg, #0a0800 0%, #1a1200 40%, #b8860b 100%);
+}
+
+.proj-card.blaze .proj-type {
+  color: #d4a017;
+  border-color: rgba(212, 160, 23, 0.35);
+}
+
+.blaze-showcase {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Full-width lead image */
+.blaze-showcase-lead {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21/9;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blaze-showcase-lead img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition:
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.5s ease;
+  filter: brightness(0.9);
+}
+
+.blaze-showcase-lead:hover img {
+  transform: scale(1.03);
+  filter: brightness(1);
+}
+
+/* Two-column pair */
+.blaze-showcase-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
+.blaze-showcase-item {
+  position: relative;
+
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blaze-showcase-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition:
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.5s ease;
+  filter: brightness(0.85);
+}
+
+.blaze-showcase-item:hover img {
+  transform: scale(1.04);
+  filter: brightness(1);
+}
+
+/* Captions */
+.blaze-showcase-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1.8rem 1.4rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transform: translateY(6px);
+  opacity: 0;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.blaze-showcase-lead:hover .blaze-showcase-caption,
+.blaze-showcase-item:hover .blaze-showcase-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.blaze-caption-num {
+  font-family: var(--ff-mono);
+  font-size: 0.62rem;
+  color: #d4a017;
+  letter-spacing: 0.14em;
+}
+
+.blaze-caption-text {
+  font-family: var(--ff-mono);
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Gold accent line on hover — left edge */
+.blaze-showcase-lead::before,
+.blaze-showcase-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: #d4a017;
+  z-index: 2;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.blaze-showcase-lead:hover::before,
+.blaze-showcase-item:hover::before {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .blaze-showcase-pair {
+    grid-template-columns: 1fr;
+  }
+  .blaze-showcase-lead {
+    aspect-ratio: 16/9;
+  }
+}
+
 /* Card info overlay */
 .proj-card-overlay {
   position: absolute;
@@ -994,6 +1115,151 @@ section {
 .proj-card.decatur .proj-type {
   color: #6fcf6f;
   border-color: rgba(111, 207, 111, 0.35);
+}
+
+.proj-card.voyage .proj-card-bg {
+  background: linear-gradient(160deg, #020810 0%, #050f20 40%, #0a2040 100%);
+}
+
+.proj-card.voyage .proj-type {
+  color: #a8c8f0;
+  border-color: rgba(168, 200, 240, 0.35);
+}
+
+.proj-card.voyage .mock-browser {
+  transform: perspective(600px) rotateY(-4deg) rotateX(3deg) translateY(-10px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.proj-card.voyage:hover .mock-browser {
+  transform: perspective(600px) rotateY(0deg) rotateX(0deg) translateY(-16px);
+}
+
+.voyage-showcase {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.voyage-showcase-lead {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 21/9;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.voyage-showcase-lead img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition:
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.5s ease;
+  filter: brightness(0.88);
+}
+
+.voyage-showcase-lead:hover img {
+  transform: scale(1.03);
+  filter: brightness(1);
+}
+
+.voyage-showcase-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
+.voyage-showcase-item {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.voyage-showcase-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition:
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.5s ease;
+  filter: brightness(0.85);
+}
+
+.voyage-showcase-item:hover img {
+  transform: scale(1.04);
+  filter: brightness(1);
+}
+
+.voyage-showcase-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1.8rem 1.4rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transform: translateY(6px);
+  opacity: 0;
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.voyage-showcase-lead:hover .voyage-showcase-caption,
+.voyage-showcase-item:hover .voyage-showcase-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.voyage-caption-num {
+  font-family: var(--ff-mono);
+  font-size: 0.62rem;
+  color: #a8c8f0;
+  letter-spacing: 0.14em;
+}
+
+.voyage-caption-text {
+  font-family: var(--ff-mono);
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.voyage-showcase-lead::before,
+.voyage-showcase-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  background: #a8c8f0;
+  z-index: 2;
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.voyage-showcase-lead:hover::before,
+.voyage-showcase-item:hover::before {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .voyage-showcase-pair {
+    grid-template-columns: 1fr;
+  }
+  .voyage-showcase-lead {
+    aspect-ratio: 16/9;
+  }
 }
 
 .proj-name {
@@ -1090,7 +1356,6 @@ section {
 
 /* Case study hero */
 .case-hero {
-  height: 55vh;
   min-height: 380px;
   position: relative;
   display: flex;
@@ -1106,7 +1371,7 @@ section {
 
 .case-hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: flex-end;
