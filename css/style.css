@@ -724,6 +724,12 @@ section {
 .proj-card.decatur .proj-card-bg {
   background: linear-gradient(160deg, #050c05 0%, #0a1c0a 40%, #2e7d32 100%);
 }
+.proj-card.blaze .proj-card-bg {
+  background: linear-gradient(160deg, #0c0905 0%, #1c150a 40%, #856925 100%);
+}
+.proj-card.voyage .proj-card-bg {
+  background: linear-gradient(160deg, #05080c 0%, #0a141c 40%, #256285 100%);
+}
 
 /* Floating mock screen visual */
 .proj-mock {
@@ -919,6 +925,20 @@ section {
   margin-bottom: 7rem;
 }
 
+.proj-card.voyage .proj-mock {
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.proj-card.blaze .proj-mock {
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
 /* Card info overlay */
 .proj-card-overlay {
   position: absolute;
@@ -979,7 +999,7 @@ section {
 .proj-name {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 3.5vw, 2.8rem);
-  line-height: 1;
+  line-height: 0.8;
   letter-spacing: 0.03em;
   margin-bottom: 0.5rem;
 }
