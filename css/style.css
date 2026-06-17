@@ -332,28 +332,6 @@ section {
 .hero-grad-b {
   background: linear-gradient(to top, var(--black) 0%, transparent 55%);
 }
-.hero-stats {
-  position: absolute;
-  bottom: 3rem;
-  right: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-  text-align: right;
-}
-.stat-num {
-  font-family: var(--ff-display);
-  font-size: 3rem;
-  color: var(--lime);
-  line-height: 1;
-}
-.stat-label {
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--mid);
-}
-
 .hero-scroll {
   position: absolute;
   bottom: 2rem;
@@ -721,9 +699,6 @@ section {
 .proj-card.fixupja .proj-card-bg {
   background: linear-gradient(160deg, #191a05 0%, #282507 40%, #ccc500 100%);
 }
-.proj-card.decatur .proj-card-bg {
-  background: linear-gradient(160deg, #050c05 0%, #0a1c0a 40%, #2e7d32 100%);
-}
 .proj-card.blaze .proj-card-bg {
   background: linear-gradient(160deg, #0c0905 0%, #1c150a 40%, #856925 100%);
 }
@@ -795,39 +770,6 @@ section {
   display: block;
 }
 
-.mock-pill {
-  height: 8px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
-.mock-pill.accent {
-  background: var(--proj-accent);
-  opacity: 0.8;
-}
-.mock-pill.w60 {
-  width: 60%;
-}
-.mock-pill.w80 {
-  width: 80%;
-}
-.mock-pill.w40 {
-  width: 40%;
-}
-
-.mock-card-block {
-  height: 54px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.mock-card-block.accent {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: var(--proj-accent);
-  border-opacity: 0.3;
-}
-
 .proj-card:hover .mock-browser {
   transform: perspective(800px) rotateY(0deg) rotateX(0deg) translateY(-18px);
 }
@@ -897,13 +839,6 @@ section {
   height: auto;
   object-fit: cover;
   display: block;
-}
-
-.proj-card.decatur .proj-mock {
-  padding: 3rem 2rem;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 7rem;
 }
 
 .proj-card.voyage .proj-mock {
@@ -1112,11 +1047,6 @@ section {
   color: #fffa5b;
   border-color: rgba(255, 239, 91, 0.35);
 }
-.proj-card.decatur .proj-type {
-  color: #6fcf6f;
-  border-color: rgba(111, 207, 111, 0.35);
-}
-
 .proj-card.voyage .proj-card-bg {
   background: linear-gradient(160deg, #020810 0%, #050f20 40%, #0a2040 100%);
 }
@@ -1643,12 +1573,6 @@ section {
   margin-bottom: 1rem;
 }
 
-.step-icon {
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-
 .step-name {
   font-family: var(--font-heading);
   font-size: 1.1rem;
@@ -1837,25 +1761,10 @@ section {
   opacity: 1;
 }
 
-/* Keep phone mock and label above pseudo elements */
-.screen-phone-mock,
-.mock-desktop,
+/* Keep label above pseudo elements */
 .screen-label {
   position: relative;
   z-index: 1;
-}
-
-.screen-phone-mock {
-  width: 90px;
-  height: 160px;
-  border-radius: 14px;
-  border: 1.5px solid rgba(255, 255, 255, 0.12);
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  flex-shrink: 0;
 }
 
 .screen-phone-bar {
@@ -1872,14 +1781,6 @@ section {
   height: 5px;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.1);
-}
-
-.screen-phone-body {
-  flex: 1;
-  padding: 6px 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
 }
 
 .screen-label {
@@ -1986,20 +1887,6 @@ section {
 }
 .fade-up-d2 {
   animation-delay: 0.2s;
-}
-.fade-up-d3 {
-  animation-delay: 0.3s;
-}
-
-/* ─── Demo page chrome ─────────────────────────── */
-.demo-notice {
-  background: rgba(200, 240, 74, 0.08);
-  border-bottom: 1px solid rgba(200, 240, 74, 0.15);
-  padding: 0.8rem 6vw;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--lime);
-  letter-spacing: 0.08em;
 }
 
 /* ── BROADCAST ───────────────────────────────────────────── */
@@ -2123,151 +2010,6 @@ section {
   font-size: 0.76rem;
   color: var(--mid);
   line-height: 1.6;
-}
-
-/* ── BRANDS ──────────────────────────────────────────────── */
-#brands {
-  border-top: 1px solid var(--border);
-}
-.brands-intro {
-  font-size: 0.95rem;
-  line-height: 1.85;
-  color: #777;
-  max-width: 620px;
-  margin: 1.5rem 0 4rem;
-}
-
-.brands-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.8rem;
-}
-
-.brand-card {
-  border: 1px solid var(--border);
-  position: relative;
-  overflow: hidden;
-  transition:
-    border-color 0.35s,
-    transform 0.35s var(--ease-snap);
-}
-.brand-card:hover {
-  border-color: var(--lime);
-  transform: translateY(-6px);
-}
-
-.brand-card-inner {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.brand-hero {
-  width: 100%;
-  aspect-ratio: 16/8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-.brand-hero-necessities {
-  background: linear-gradient(135deg, #c0392b 0%, #6b3a5a 50%, #2c3e50 100%);
-}
-.brand-hero-d3gaming {
-  background: #f0f0f0;
-}
-
-.brand-logo-img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.4));
-  transition: transform 0.4s var(--ease-snap);
-}
-.brand-card:hover .brand-logo-img {
-  transform: scale(1.08);
-}
-
-.brand-body {
-  padding: 2rem;
-  background: var(--grey2);
-  flex: 1;
-}
-.brand-badge {
-  display: inline-block;
-  margin-bottom: 0.8rem;
-  font-size: 0.62rem;
-  font-family: var(--ff-mono);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  padding: 0.22rem 0.7rem;
-  border: 1px solid;
-}
-.badge-tiktok {
-  color: #69c9d0;
-  border-color: rgba(105, 201, 208, 0.35);
-  background: rgba(105, 201, 208, 0.06);
-}
-.badge-yt {
-  color: #ff3333;
-  border-color: rgba(255, 51, 51, 0.35);
-  background: rgba(255, 51, 51, 0.06);
-}
-
-.brand-name {
-  font-family: var(--ff-display);
-  font-size: 2.2rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.7rem;
-}
-.brand-desc {
-  font-size: 0.82rem;
-  line-height: 1.8;
-  color: #777;
-  margin-bottom: 1.6rem;
-}
-.brand-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1.6rem;
-}
-.brand-tag {
-  font-size: 0.6rem;
-  font-family: var(--ff-mono);
-  color: #4a4a4a;
-  border: 1px solid #272727;
-  padding: 0.18rem 0.55rem;
-}
-.brand-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  border-bottom: 1px solid;
-  padding-bottom: 0.1rem;
-  transition: opacity 0.2s;
-}
-.brand-link:hover {
-  opacity: 0.7;
-}
-.brand-link-tiktok {
-  color: #69c9d0;
-  border-color: rgba(105, 201, 208, 0.4);
-}
-.brand-link-yt {
-  color: #ff4444;
-  border-color: rgba(255, 68, 68, 0.4);
-}
-.brand-link svg {
-  transition: transform 0.2s;
-}
-.brand-link:hover svg {
-  transform: translate(3px, -3px);
 }
 
 /* ── WEB DEV ─────────────────────────────────────────────── */
@@ -2523,9 +2265,6 @@ footer {
     grid-row: auto;
   }
 
-  .uiux-grid {
-    grid-template-columns: 1fr;
-  }
   .broadcast-grid {
     grid-template-columns: 1fr;
   }
@@ -2533,9 +2272,6 @@ footer {
     grid-template-columns: 1fr;
   }
   .webdev-grid {
-    grid-template-columns: 1fr;
-  }
-  .brands-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -2580,14 +2316,6 @@ footer {
     width: 100%;
     text-align: center;
     padding: 0.9rem 1.5rem;
-  }
-  .hero-stats {
-    right: 0.8rem;
-    bottom: 1.2rem;
-    gap: 1rem;
-  }
-  .stat-num {
-    font-size: 2rem;
   }
   .hero-tag {
     font-size: 0.62rem;
@@ -2792,14 +2520,6 @@ footer {
   }
   .broadcast-title {
     font-size: 1.2rem;
-  }
-
-  /* ── Brands ── */
-  .brand-body {
-    padding: 1.4rem;
-  }
-  .brand-name {
-    font-size: 1.8rem;
   }
 
   /* ── Contact ── */
