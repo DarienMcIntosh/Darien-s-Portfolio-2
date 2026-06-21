@@ -178,9 +178,7 @@
           <strong
             >videographer, camera switcher, and live stream manager</strong
           >
-          — producing multi-camera broadcasts for events in Jamaica. Alongside
-          client work, I run my own brands:
-          <strong>Necessities</strong> and <strong>D3Gaming</strong>.
+          — producing multi-camera broadcasts for events in Jamaica.
         </p>
 
         <div class="tools-grid">
@@ -932,7 +930,7 @@
     <div class="case-overlay" id="case-vibely" aria-label="Vibely case study">
       <div
         class="case-accent-bar"
-        style="background: linear-gradient(90deg, var(--orange), #f0c060)"
+        style="background: linear-gradient(90deg, #f5a040, #f0c060)"
       ></div>
 
       <div
@@ -975,6 +973,7 @@
               <span class="case-tag">Mobile</span>
               <span class="case-tag">Events</span>
               <span class="case-tag">UX Research</span>
+              <span class="case-tag">Concept Project</span>
             </div>
           </div>
         </div>
@@ -986,214 +985,137 @@
           <div>
             <p class="case-section-label">The problem</p>
             <h2 class="case-problem-title">FRAGMENTED<br />EVENT DISCOVERY</h2>
-            <div class="case-stat-row">
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: var(--orange)">
-                  80%
-                </div>
-                <div class="case-stat-desc">
-                  of event discovery happens via scattered WhatsApp forwards
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: var(--orange)">0</div>
-                <div class="case-stat-desc">
-                  dedicated event platforms designed for the Jamaican market
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: var(--orange)">
-                  47%
-                </div>
-                <div class="case-stat-desc">
-                  of users miss events they would have attended if they'd known
-                </div>
-              </div>
-            </div>
           </div>
           <div>
-            <p class="case-section-label">The brief</p>
             <p class="case-text">
-              Jamaicans, especially in Montego Bay and Kingston, rely on
-              scattered WhatsApp forwards and Instagram story reposts to find
-              out about events. Promoters have no reliable channel and attendees
-              miss out constantly.
+              Most people I talked to in Kingston and Montego Bay find out
+              about parties and concerts the same way: a WhatsApp forward,
+              three days late, missing half the details. I ran a short
+              survey &mdash; about 20 people, mostly 18 to 35 &mdash; and the
+              same complaint kept coming up. They'd skipped something they
+              actually wanted to go to, just because nobody told them in
+              time.
             </p>
             <p class="case-text">
-              The goal was to design a
-              <strong style="color: var(--white)"
-                >centralized, trust-first event discovery app</strong
-              >
-              tailored to the Jamaican social calendar — nightlife, concerts,
-              food events, and community gatherings — with a visual identity
-              bold enough to stand out on a phone screen.
+              Vibely is my answer to that: one place to see what's on
+              nearby, who else is going, and a way to grab a ticket without
+              leaving the app. Dark by default, mobile only &mdash; built
+              for someone scrolling at 11pm trying to decide where the night
+              is headed.
             </p>
-            <p class="case-text">
-              Key constraint: the user base is mobile-only, largely 18–35, and
-              has zero tolerance for friction in the booking or discovery flow.
-            </p>
+            <div class="flow-diagram">
+              <div class="flow-node">Survey &middot; 20 people</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Wireframes</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Hi-fi in Figma</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">5 usability checks</div>
+            </div>
+            <div class="palette-strip" aria-label="Colour palette used">
+              <div class="palette-swatch" style="background: #380d00"><span>#380D00</span></div>
+              <div class="palette-swatch" style="background: #ffa400"><span>#FFA400</span></div>
+              <div class="palette-swatch" style="background: #e85a45"><span>#E85A45</span></div>
+            </div>
           </div>
         </div>
 
-        <!-- Process -->
-        <div class="process-section">
-          <p class="case-section-label">How I got there</p>
-          <h2 class="process-title">DESIGN PROCESS</h2>
-          <div class="process-steps">
-            <div class="process-step" style="--step-color: var(--orange)">
-              <div class="step-num">01</div>
-              <div class="step-name">DISCOVER</div>
-              <div class="step-detail">
-                Surveyed 20+ local event-goers. Mapped pain points around
-                discovery, ticket scams, and no-show events. Identified trust as
-                the #1 barrier.
+        <!-- Beat 01 -->
+        <div class="case-beat phone-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">01</span>
+            <h3 class="beat-title">The feed comes first</h3>
+            <p class="beat-copy">
+              My first pass put browse categories right on the home screen
+              &mdash; concerts, food, nightlife. Almost nobody who tested it
+              tapped into them first; they wanted to scroll. So the home
+              screen leads with a feed of what's happening nearby this week,
+              sorted by date. Categories are still there, just one tap
+              deeper instead of the front door.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="screen-phone-frame">
+              <div class="screen-phone-bar">
+                <div class="mock-notch"></div>
               </div>
-            </div>
-            <div class="process-step" style="--step-color: #e8c060">
-              <div class="step-num">02</div>
-              <div class="step-name">DEFINE</div>
-              <div class="step-detail">
-                Personas for 3 user types: casual attendee, serious nightlifer,
-                promoter. Built user journey maps highlighting drop-off points
-                in existing flows.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: var(--lime)">
-              <div class="step-num">03</div>
-              <div class="step-name">DESIGN</div>
-              <div class="step-detail">
-                Low-fi wireframes → mid-fi feedback loops → high-fidelity in
-                Figma. Dark theme selected immediately — nightlife context
-                demands it.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: #a8d870">
-              <div class="step-num">04</div>
-              <div class="step-name">TEST</div>
-              <div class="step-detail">
-                5 usability sessions. Key insight: users skipped the categories
-                — they wanted the feed first. Redesigned home screen around this
-                behaviour.
+              <div class="screen-phone-inner">
+                <img
+                  src="assets/vibely-home.webp"
+                  alt="Vibely home feed"
+                  class="screen-real-img"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Key decisions -->
-        <div class="decisions-section">
-          <p class="case-section-label">Design rationale</p>
-          <h2 class="process-title">KEY DECISIONS</h2>
-          <div class="decisions-grid">
-            <div class="decision-card">
-              <div
-                class="decision-accent"
-                style="background: var(--orange)"
-              ></div>
-              <div class="decision-label">Visual Language</div>
-              <div class="decision-title">Dark Theme, Warm Accents</div>
-              <div class="decision-why">
-                Events happen at night. The dark UI isn't aesthetic choice alone
-                — it reduces eye strain in low-light environments and makes
-                event cover photos pop without competing backgrounds. The warm
-                orange accent signals energy and social warmth without being
-                aggressive.
+        <!-- Beat 02 -->
+        <div class="case-beat phone-beat reverse">
+          <div class="case-beat-text">
+            <span class="beat-num">02</span>
+            <h3 class="beat-title">Trust had to be designed in</h3>
+            <p class="beat-copy">
+              Ticket scams come up constantly in conversations about events
+              here, so the event card carries a verified-promoter badge and
+              a real attendee count before anyone taps through. It's a
+              small detail on screen, but it was the one piece of feedback
+              that came up unprompted in almost every usability check.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="screen-phone-frame">
+              <div class="screen-phone-bar">
+                <div class="mock-notch"></div>
               </div>
-            </div>
-            <div class="decision-card">
-              <div
-                class="decision-accent"
-                style="background: var(--lime)"
-              ></div>
-              <div class="decision-label">Information Architecture</div>
-              <div class="decision-title">Feed First, Browse Second</div>
-              <div class="decision-why">
-                Testing revealed users wanted serendipitous discovery, not
-                intentional search. The home screen leads with a swipeable card
-                feed of upcoming events near you — categories become a secondary
-                browsing mode, not the entry point.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #5bb3ff"></div>
-              <div class="decision-label">Trust Design</div>
-              <div class="decision-title">Verified Promoter Badges</div>
-              <div class="decision-why">
-                Ticket scams are real in Jamaica. Adding verified status, sold
-                ticket counts, and a review layer directly on the event card
-                rebuilt confidence before users even tapped through. This one
-                feature reduced drop-off at the ticket screen significantly in
-                testing.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #c4a0ff"></div>
-              <div class="decision-label">Social Layer</div>
-              <div class="decision-title">"Who's Going" Visibility</div>
-              <div class="decision-why">
-                Social proof is the strongest conversion signal in
-                entertainment. Showing mutual friends attending an event — or
-                the total attendee count — taps directly into FOMO. This feature
-                drove the highest increase in intent-to-attend in usability
-                testing.
+              <div class="screen-phone-inner">
+                <img
+                  src="assets/vibely-event.webp"
+                  alt="Vibely event details"
+                  class="screen-real-img"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Screens -->
-        <div class="screens-section">
-          <p class="case-section-label">Key screens</p>
-          <h2 class="process-title">THE INTERFACE</h2>
-
-          <div class="screens-grid">
-            <div class="screen-item">
-              <div class="screen-phone-frame">
-                <div class="screen-phone-bar">
-                  <div class="mock-notch"></div>
-                </div>
-                <div class="screen-phone-inner">
-                  <img
-                    src="assets/vibely-home.webp"
-                    alt="Home Feed"
-                    class="screen-real-img"
-                  />
-                </div>
+        <!-- Beat 03 -->
+        <div class="case-beat phone-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">03</span>
+            <h3 class="beat-title">One screen, not five</h3>
+            <p class="beat-copy">
+              The checkout flow went through three versions before landing
+              on this one. Date, ticket type, and payment all live on a
+              single screen &mdash; no multi-step wizard. Anyone who's tried
+              to buy a concert ticket on a slow connection at a bus stop
+              will understand why that mattered.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="screen-phone-frame">
+              <div class="screen-phone-bar">
+                <div class="mock-notch"></div>
               </div>
-              <div class="screen-label">Home</div>
-            </div>
-
-            <div class="screen-item">
-              <div class="screen-phone-frame">
-                <div class="screen-phone-bar">
-                  <div class="mock-notch"></div>
-                </div>
-                <div class="screen-phone-inner">
-                  <img
-                    src="assets/vibely-ticket.webp"
-                    alt="Purchase Ticket"
-                    class="screen-real-img"
-                  />
-                </div>
+              <div class="screen-phone-inner">
+                <img
+                  src="assets/vibely-ticket.webp"
+                  alt="Vibely ticket checkout"
+                  class="screen-real-img"
+                />
               </div>
-              <div class="screen-label">Purchase Ticket</div>
-            </div>
-
-            <div class="screen-item">
-              <div class="screen-phone-frame">
-                <div class="screen-phone-bar">
-                  <div class="mock-notch"></div>
-                </div>
-                <div class="screen-phone-inner">
-                  <img
-                    src="assets/vibely-event.webp"
-                    alt="Event Details"
-                    class="screen-real-img"
-                  />
-                </div>
-              </div>
-              <div class="screen-label">Event Details</div>
             </div>
           </div>
+        </div>
+
+        <!-- Closing -->
+        <div class="case-closing">
+          <p>
+            Vibely is still a concept project &mdash; there's no real
+            payment processor wired up, and the promoter side of the app
+            (the dashboard for posting events) only exists as a sketch
+            right now. That's next if I keep building it out.
+          </p>
         </div>
 
         <!-- CTA row -->
@@ -1306,6 +1228,7 @@
               <span class="case-tag">Mobile</span>
               <span class="case-tag">Services</span>
               <span class="case-tag">UX Flow</span>
+              <span class="case-tag">Concept Project</span>
             </div>
           </div>
         </div>
@@ -1318,223 +1241,137 @@
             <h2 class="case-problem-title">
               FINDING HELP IS<br />WORD OF MOUTH
             </h2>
-            <div class="case-stat-row">
-              <div class="case-stat">
-                <div class="case-stat-desc">
-                  Jamaica has chronic, unaddressed infrastructure problems such
-                  as potholes, broken streetlights, blocked drains with no
-                  centralized system to report them.
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-desc">
-                  Citizens default to complaining on social media instead of
-                  reaching authorities, meaning complaints generate noise but no
-                  action.
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-desc">
-                  Government agencies (NWA, KSAC, parish councils) have zero
-                  real-time visibility into what needs fixing and where, so
-                  they're essentially flying blind.
-                </div>
-              </div>
-            </div>
           </div>
           <div>
-            <p class="case-section-label">The brief</p>
             <p class="case-text">
-              FixUpJa is a mobile-friendly civic reporting app that bridges the
-              gap between Jamaican citizens and government maintenance agencies.
+              Jamaica has a long list of small infrastructure problems
+              &mdash; potholes, broken streetlights, blocked drains &mdash;
+              and no real system to report them. What kept coming up, both
+              in conversation and in how people post about it online, is
+              that most complaints end up on Twitter or Facebook instead of
+              in front of anyone who can actually fix it. Noise, but no
+              action.
             </p>
             <p class="case-text">
-              The core loop: a citizen spots a problem (pothole, broken light,
-              flooded drain), submits a photo + GPS pin through the app, and the
-              report is automatically routed to the correct government body,
-              NWA, KSAC, or the relevant parish council via a formatted email
-              system. Government admins then assign work to crews, who track and
-              close jobs from a mobile view. Citizens get status updates
-              throughout.
+              FixUpJa is built around one loop: someone spots a problem,
+              snaps a photo with a GPS pin, and the report routes to the
+              right government body &mdash; NWA, KSAC, or the parish council
+              &mdash; automatically. The harder part was designing for three
+              completely different people inside one app.
             </p>
-            <p class="case-text">
-              Three completely different user types had to be designed for
-              within a single product: Citizens (report & track), Government
-              Officials (dashboard, assignment, PR), and Maintenance Crews
-              (mobile work orders, completion photos). Community groups are a
-              fourth type that they can view area issues, vote on priorities,
-              and generate reports for grant applications.
-            </p>
+            <div class="flow-diagram">
+              <div class="flow-node">Citizen<br />reports &amp; tracks</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Government<br />verifies &amp; assigns</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Crew<br />fixes &amp; closes</div>
+            </div>
+            <div class="palette-strip" aria-label="Colour palette used">
+              <div class="palette-swatch" style="background: #2b4d18"><span>#2B4D18</span></div>
+              <div class="palette-swatch" style="background: #7a7a0d"><span>#7A7A0D</span></div>
+              <div class="palette-swatch" style="background: #020a03"><span>#020A03</span></div>
+            </div>
           </div>
         </div>
 
-        <div class="process-section">
-          <p class="case-section-label">How I got there</p>
-          <h2 class="process-title">DESIGN PROCESS</h2>
-          <div class="process-steps">
-            <div class="process-step" style="--step-color: #ffe65b">
-              <div class="step-num">01</div>
-              <div class="step-name">DISCOVER</div>
-              <div class="step-detail">
-                Mapped three entirely separate user journeys (citizen, admin,
-                crew) and their conflicting needs. The core tension: citizens
-                want speed and anonymity; government wants accountability and
-                verification; crews want simplicity.
+        <!-- Beat 01 -->
+        <div class="case-beat phone-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">01</span>
+            <h3 class="beat-title">A map people can actually read</h3>
+            <p class="beat-copy">
+              Red, yellow, green &mdash; new, in progress, fixed. Sounds
+              obvious, but most civic apps bury status behind a list.
+              Putting it on the map first means a citizen can see at a
+              glance whether their report disappeared into a void or is
+              actually being worked on.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="screen-phone-frame">
+              <div class="screen-phone-bar">
+                <div class="mock-notch"></div>
               </div>
-            </div>
-            <div class="process-step" style="--step-color: #eed03a">
-              <div class="step-num">02</div>
-              <div class="step-name">DEFINE</div>
-              <div class="step-detail">
-                Established the legal and privacy framework first for photo
-                guidelines, blur tools, GPS verification, Terms of Service, and
-                consent checkboxes. Civic apps live or die on trust and legal
-                clarity. These weren't afterthoughts; they shaped the entire
-                submission flow.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: var(--lime)">
-              <div class="step-num">03</div>
-              <div class="step-name">DESIGN</div>
-              <div class="step-detail">
-                Report submission flow, interactive colour-coded map (red = new,
-                yellow = in progress, green = fixed), admin dashboard, and crew
-                mobile view were designed as four distinct interface modes
-                within one product.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: #90c840">
-              <div class="step-num">04</div>
-              <div class="step-name">SAFEGUARD</div>
-              <div class="step-detail">
-                Built anti-abuse into the Information Architecture itself, GPS
-                verification required, 20+ character minimum descriptions, admin
-                review queue, duplicate detection, and repeat offender blocking.
-                The system had to be resistant to spam from the ground up.
+              <div class="screen-phone-inner">
+                <img
+                  src="assets/fixupja-home.webp"
+                  alt="FixUpJa home map screen"
+                  class="screen-real-img"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <div class="decisions-section">
-          <p class="case-section-label">Design rationale</p>
-          <h2 class="process-title">KEY DECISIONS</h2>
-          <div class="decisions-grid">
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #5bb3ff"></div>
-              <div class="decision-label">Privacy & Legal Design</div>
-              <div class="decision-title">
-                Photo Privacy Tutorial on First Use
+        <!-- Beat 02 -->
+        <div class="case-beat phone-beat reverse">
+          <div class="case-beat-text">
+            <span class="beat-num">02</span>
+            <h3 class="beat-title">Privacy came before the camera</h3>
+            <p class="beat-copy">
+              Taking photos of public infrastructure in Jamaica isn't always
+              simple &mdash; faces, plates, and house numbers end up in
+              frame by accident. Before anyone can submit a report, there's
+              a short walkthrough on what to avoid and a blur tool for
+              anything that slips through. It's the first thing a new user
+              sees, on purpose.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="screen-phone-frame">
+              <div class="screen-phone-bar">
+                <div class="mock-notch"></div>
               </div>
-              <div class="decision-why">
-                Taking photos in public spaces in Jamaica carries real legal and
-                safety risk. Rather than burying guidelines in a terms page, a
-                mandatory tutorial appears on first launch walking users through
-                what to avoid (faces, plates, house numbers) and offering a blur
-                tool for accidental exposures. This makes compliance feel
-                helpful, not punitive.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div
-                class="decision-accent"
-                style="background: var(--lime)"
-              ></div>
-              <div class="decision-label">Core Interface</div>
-              <div class="decision-title">Colour-Coded Map as the Core UI</div>
-              <div class="decision-why">
-                The interactive map (red/yellow/green pins) is the product's
-                most powerful transparency tool. Citizens can see their report
-                isn't just sitting in a void, it has a status. Government can
-                see geographic clustering of issues. Media and community groups
-                can screenshot it for advocacy. One visual layer serves four
-                user types simultaneously.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #ce910e"></div>
-              <div class="decision-label">System Architecture</div>
-              <div class="decision-title">
-                Email Routing Instead of API Integration
-              </div>
-              <div class="decision-why">
-                Connecting directly into government IT systems (NWA, KSAC) would
-                require bureaucratic approvals and infrastructure access that
-                isn't realistic at this stage. Instead, the app auto-generates a
-                formatted report email sent to the correct agency address.
-                Citizens get a "Report Sent" confirmation. It's low-tech by
-                design and it actually works within Jamaica's institutional
-                reality.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #c4a0ff"></div>
-              <div class="decision-label">Retention Strategy</div>
-              <div class="decision-title">
-                Gamification for Sustained Engagement
-              </div>
-              <div class="decision-why">
-                Civic apps die when initial enthusiasm fades. Adding
-                leaderboards (top reporters, best crews), achievement badges,
-                and an upvote system for high-priority issues creates intrinsic
-                motivation to keep reporting and gives maintenance crews public
-                recognition for their work, which is a meaningful incentive in a
-                public-sector context.
+              <div class="screen-phone-inner">
+                <img
+                  src="assets/fixupja-incident.webp"
+                  alt="FixUpJa incident report detail"
+                  class="screen-real-img"
+                />
               </div>
             </div>
           </div>
         </div>
 
-        <div class="screens-section">
-          <p class="case-section-label">Key screens</p>
-          <h2 class="process-title">THE INTERFACE</h2>
-          <div class="screens-grid">
-            <div class="screen-item">
-              <div class="screen-phone-frame">
-                <div class="screen-phone-bar">
-                  <div class="mock-notch"></div>
-                </div>
-                <div class="screen-phone-inner">
-                  <img
-                    src="assets/fixupja-incident.webp"
-                    alt="Incident Detail"
-                    class="screen-real-img"
-                  />
-                </div>
+        <!-- Beat 03 -->
+        <div class="case-beat phone-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">03</span>
+            <h3 class="beat-title">The crew's screen had to be the simplest</h3>
+            <p class="beat-copy">
+              Citizens and government admins can handle some complexity.
+              Crews working with their hands and a phone in a back pocket
+              can't. Their view strips down to a job list, a before/after
+              photo upload, and a close-out button &mdash; nothing else
+              competing for attention.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="screen-phone-frame">
+              <div class="screen-phone-bar">
+                <div class="mock-notch"></div>
               </div>
-              <div class="screen-label">Incident Detail</div>
-            </div>
-            <div class="screen-item">
-              <div class="screen-phone-frame">
-                <div class="screen-phone-bar">
-                  <div class="mock-notch"></div>
-                </div>
-                <div class="screen-phone-inner">
-                  <img
-                    src="assets/fixupja-crew.webp"
-                    alt="Crew Dashboard"
-                    class="screen-real-img"
-                  />
-                </div>
+              <div class="screen-phone-inner">
+                <img
+                  src="assets/fixupja-crew.webp"
+                  alt="FixUpJa crew dashboard"
+                  class="screen-real-img"
+                />
               </div>
-              <div class="screen-label">Crew Dashboard</div>
-            </div>
-            <div class="screen-item">
-              <div class="screen-phone-frame">
-                <div class="screen-phone-bar">
-                  <div class="mock-notch"></div>
-                </div>
-                <div class="screen-phone-inner">
-                  <img
-                    src="assets/fixupja-home.webp"
-                    alt="Home Screen"
-                    class="screen-real-img"
-                  />
-                </div>
-              </div>
-              <div class="screen-label">Home Screen</div>
             </div>
           </div>
+        </div>
+
+        <!-- Closing -->
+        <div class="case-closing">
+          <p>
+            This is a concept project, not a deployed product. The
+            email-routing system that would send reports to NWA or KSAC is
+            designed but not actually connected to anything live &mdash;
+            that would need sign-off I don't have. If an agency ever wanted
+            to pilot something like this, that's the piece I'd want to test
+            first.
+          </p>
         </div>
 
         <div class="case-cta-row">
@@ -1633,7 +1470,7 @@
         <div class="case-hero-content">
           <div>
             <p class="case-hero-label fade-up">
-              Case Study — Web Design & Brand
+              Self-Initiated &mdash; Web Design &amp; Brand
             </p>
             <h1
               class="case-hero-title fade-up fade-up-d1"
@@ -1649,6 +1486,7 @@
               <span class="case-tag">Web Design</span>
               <span class="case-tag">Branding</span>
               <span class="case-tag">Booking UX</span>
+              <span class="case-tag">Concept Project</span>
             </div>
           </div>
         </div>
@@ -1661,201 +1499,101 @@
             <h2 class="case-problem-title">
               INVISIBLE<br />IN A<br />DIGITAL AGE
             </h2>
-            <div class="case-stat-row">
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: #d4a017">100%</div>
-                <div class="case-stat-desc">
-                  of bookings were walk-in only — zero digital presence to
-                  capture intent
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: #d4a017">0</div>
-                <div class="case-stat-desc">
-                  premium barbershop websites serving the Montego Bay market
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: #d4a017">3×</div>
-                <div class="case-stat-desc">
-                  more bookings generated by service businesses with
-                  professional web presence
-                </div>
-              </div>
-            </div>
           </div>
           <div>
-            <p class="case-section-label">The brief</p>
             <p class="case-text">
-              Blaze Barbershop launched in 2024 in Montego Bay with a clear
-              identity — premium grooming, precision craft, no compromise. But
-              without a website, they were invisible to anyone who wasn't
-              already a regular. New clients searching for a quality cut in
-              MoBay found nothing.
+              Most local barbershops I see around Montego Bay run entirely
+              on word of mouth and a pinned location &mdash; no website,
+              nothing to look up before showing up. That gap is what got me
+              curious: what would it look like if a barbershop's site took
+              itself as seriously as the actual haircuts?
             </p>
             <p class="case-text">
-              The goal was to build a
-              <strong style="color: var(--white)"
-                >high-end web presence that matched the quality of the in-shop
-                experience</strong
-              >
-              — showcasing the team, services, and pricing while making it
-              effortless for a client to book a session. Built entirely in
-              Framer for fast deployment and easy client edits.
+              Blaze Barbershop isn't a real business. It's a concept I
+              built from scratch &mdash; name, branding, pricing, team,
+              all invented &mdash; to explore what a confident, no-fluff
+              grooming brand could look like online.
             </p>
-            <p class="case-text">
-              Key constraint: the design had to feel premium without feeling
-              inaccessible. Blaze serves everyday Jamaicans who take their
-              appearance seriously — not a luxury spa clientele. The tone needed
-              to be sharp, confident, and welcoming.
-            </p>
-          </div>
-        </div>
-
-        <div class="process-section">
-          <p class="case-section-label">How I got there</p>
-          <h2 class="process-title">DESIGN PROCESS</h2>
-          <div class="process-steps">
-            <div class="process-step" style="--step-color: #d4a017">
-              <div class="step-num">01</div>
-              <div class="step-name">BRAND AUDIT</div>
-              <div class="step-detail">
-                Reviewed existing barbershop websites globally and locally.
-                Found that Jamaican barbershops had zero digital design quality
-                — a wide open gap to own the premium positioning.
-              </div>
+            <div class="flow-diagram">
+              <div class="flow-node">Looked at other<br />barbershop sites</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Picked dark + gold<br />over white + clip-art</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Built &amp; shipped<br />in Framer</div>
             </div>
-            <div class="process-step" style="--step-color: #c49010">
-              <div class="step-num">02</div>
-              <div class="step-name">CONTENT MAP</div>
-              <div class="step-detail">
-                Defined the five core sections: hero statement, services with
-                pricing, team profiles, testimonials, and a persistent booking
-                CTA. Every section answers a specific client objection before
-                they leave.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: var(--lime)">
-              <div class="step-num">03</div>
-              <div class="step-name">VISUAL DESIGN</div>
-              <div class="step-detail">
-                Dark background, gold typography accents, high-contrast
-                editorial photography. The aesthetic borrows from luxury fashion
-                and premium grooming brands — deliberate elevation above the
-                typical barbershop site.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: #a0c830">
-              <div class="step-num">04</div>
-              <div class="step-name">BUILD</div>
-              <div class="step-detail">
-                Built in Framer for zero-code deployment and client autonomy.
-                Smooth scroll animations, responsive layout, and a sticky
-                booking CTA that persists on every viewport without feeling
-                intrusive.
-              </div>
+            <div class="palette-strip" aria-label="Colour palette used">
+              <div class="palette-swatch" style="background: #a38437"><span>#A38437</span></div>
+              <div class="palette-swatch" style="background: #101a12"><span>#101A12</span></div>
+              <div class="palette-swatch" style="background: #2d382f"><span>#2D382F</span></div>
             </div>
           </div>
         </div>
 
-        <div class="decisions-section">
-          <p class="case-section-label">Design rationale</p>
-          <h2 class="process-title">KEY DECISIONS</h2>
-          <div class="decisions-grid">
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #d4a017"></div>
-              <div class="decision-label">Visual Identity</div>
-              <div class="decision-title">
-                Dark Luxury Over Bright & Generic
-              </div>
-              <div class="decision-why">
-                Most barbershop websites default to white backgrounds, clip-art
-                scissors, and generic stock photos. Going dark with gold accents
-                immediately signals premium positioning and stands out in every
-                search result. The aesthetic does the selling before a word is
-                read.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div
-                class="decision-accent"
-                style="background: var(--lime)"
-              ></div>
-              <div class="decision-label">Conversion Design</div>
-              <div class="decision-title">
-                Persistent "Book Your Session" CTA
-              </div>
-              <div class="decision-why">
-                A barbershop website has one job: get the client to book. The
-                CTA appears in the hero, at the bottom of the page, and as a
-                sticky element in the navigation. It follows the user through
-                every section so the decision to book is never more than one tap
-                away.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #5bb3ff"></div>
-              <div class="decision-label">Trust Architecture</div>
-              <div class="decision-title">
-                Team Profiles Over Generic "Our Staff"
-              </div>
-              <div class="decision-why">
-                Clients choose barbers, not barbershops. Giving Marcus, Jordan,
-                and Andre each a named profile with their specialty (Master
-                Barber, Style Specialist, Fade Artist) lets clients form a
-                preference before they even walk in — driving return visits and
-                specific requests.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #c4a0ff"></div>
-              <div class="decision-label">Pricing Transparency</div>
-              <div class="decision-title">
-                Visible "From $X" on Every Service
-              </div>
-              <div class="decision-why">
-                Barbershops that hide pricing create anxiety, especially for
-                first-time clients. Displaying starting prices directly on each
-                service card removes that barrier — clients arrive knowing what
-                to expect, which means fewer awkward conversations and higher
-                walk-in conversion.
-              </div>
+        <!-- Beat 01 -->
+        <div class="case-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">01</span>
+            <h3 class="beat-title">Dark, not generic</h3>
+            <p class="beat-copy">
+              Most barbershop sites default to white backgrounds and stock
+              photos of scissors. Going dark with a gold accent was the one
+              move that made it look like nobody else's &mdash; premium
+              without trying too hard to say the word.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="case-beat-shot">
+              <img src="assets/blaze-hero.png" alt="Blaze Barbershop hero section" />
             </div>
           </div>
         </div>
 
-        <div class="screens-section">
-          <p class="case-section-label">Key screens</p>
-          <h2 class="process-title">THE INTERFACE</h2>
-
-          <div class="blaze-showcase">
-            <div class="blaze-showcase-lead">
-              <img src="assets/blaze-hero.png" alt="Blaze Barbershop Hero" />
-              <div class="blaze-showcase-caption">
-                <span class="blaze-caption-num">01</span>
-                <span class="blaze-caption-text"
-                  >Hero — The Art of the Cut</span
-                >
-              </div>
-            </div>
-
-            <div class="blaze-showcase-pair">
-              <div class="blaze-showcase-item">
-                <img src="assets/blaze-services.png" alt="Services Section" />
-                <div class="blaze-showcase-caption">
-                  <span class="blaze-caption-num">02</span>
-                  <span class="blaze-caption-text">Services & Pricing</span>
-                </div>
-              </div>
-              <div class="blaze-showcase-item">
-                <img src="assets/blaze-team.png" alt="Team Section" />
-                <div class="blaze-showcase-caption">
-                  <span class="blaze-caption-num">03</span>
-                  <span class="blaze-caption-text">Meet the Barbers</span>
-                </div>
-              </div>
+        <!-- Beat 02 -->
+        <div class="case-beat reverse">
+          <div class="case-beat-text">
+            <span class="beat-num">02</span>
+            <h3 class="beat-title">Show the price before they ask</h3>
+            <p class="beat-copy">
+              Hiding prices creates hesitation, especially for someone who's
+              never been in before. Every service card shows a starting
+              price up front &mdash; no surprises, no awkward question at
+              the chair.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="case-beat-shot">
+              <img src="assets/blaze-services.png" alt="Blaze Barbershop services and pricing" />
             </div>
           </div>
+        </div>
+
+        <!-- Beat 03 -->
+        <div class="case-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">03</span>
+            <h3 class="beat-title">People book a barber, not a shop</h3>
+            <p class="beat-copy">
+              Giving each barber a name, a photo, and a specialty &mdash;
+              fades, beard work, classic cuts &mdash; lets someone form a
+              preference before they ever walk in. Small detail, does a lot
+              of work.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="case-beat-shot">
+              <img src="assets/blaze-team.png" alt="Blaze Barbershop team profiles" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Closing -->
+        <div class="case-closing">
+          <p>
+            There's a live build at the link below, but it's a concept
+            through and through &mdash; no real booking backend, no actual
+            barbershop behind it. Built to explore the idea, not to launch
+            a business.
+          </p>
         </div>
 
         <div class="case-cta-row">
@@ -1930,7 +1668,7 @@
         <div class="case-hero-content">
           <div>
             <p class="case-hero-label fade-up">
-              Case Study — Web Design & Brand
+              Self-Initiated &mdash; Web Design &amp; Brand
             </p>
             <h1
               class="case-hero-title fade-up fade-up-d1"
@@ -1946,6 +1684,7 @@
               <span class="case-tag">Web Design</span>
               <span class="case-tag">Luxury</span>
               <span class="case-tag">Travel</span>
+              <span class="case-tag">Concept Project</span>
             </div>
           </div>
         </div>
@@ -1958,193 +1697,101 @@
             <h2 class="case-problem-title">
               LOOKING<br />BUDGET IN A<br />LUXURY MARKET
             </h2>
-            <div class="case-stat-row">
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: #a8c8f0">78%</div>
-                <div class="case-stat-desc">
-                  of luxury travelers research agencies online before making
-                  first contact
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: #a8c8f0">0.05s</div>
-                <div class="case-stat-desc">
-                  is all it takes for a visitor to form a first impression of
-                  your brand
-                </div>
-              </div>
-              <div class="case-stat">
-                <div class="case-stat-num" style="color: #a8c8f0">3×</div>
-                <div class="case-stat-desc">
-                  higher lifetime value of premium travel clients vs. standard
-                  bookers
-                </div>
-              </div>
-            </div>
           </div>
           <div>
-            <p class="case-section-label">The brief</p>
             <p class="case-text">
-              Voyagé operates in the premium end of the travel market — curated
-              escapes, overwater villas, private alpine retreats, and Santorini
-              cruises. The clientele they serve expects white-glove service from
-              the first touchpoint. Their previous digital presence didn't
-              reflect that — it looked like every other travel site,
-              indistinguishable from budget booking platforms.
+              Most travel sites in the luxury space don't actually look
+              luxury &mdash; they look like every other booking platform,
+              just with nicer photos. I wanted to see if I could design
+              something that felt like the trip had already started the
+              moment you landed on the page, before a single price was
+              mentioned.
             </p>
             <p class="case-text">
-              The goal was to design a website that functioned as a
-              <strong style="color: var(--white)"
-                >luxury destination in itself</strong
-              >
-              — before the trip begins, the site should feel like the
-              first-class lounge. Unhurried, refined, beautiful. Every design
-              decision had to signal premium positioning without saying the word
-              "luxury" once.
+              Voyag&eacute; isn't a real travel agency. It's a concept built
+              around what I think a premium travel brand's site should feel
+              like: unhurried, photo-led, confident enough to leave things
+              out. Built in Framer for the scroll animations and fast
+              iteration.
             </p>
-            <p class="case-text">
-              Built entirely in Framer to allow fast deployment, smooth
-              editorial scroll animations, and easy client content updates —
-              without sacrificing the visual quality the brand demands.
-            </p>
-          </div>
-        </div>
-
-        <div class="process-section">
-          <p class="case-section-label">How I got there</p>
-          <h2 class="process-title">DESIGN PROCESS</h2>
-          <div class="process-steps">
-            <div class="process-step" style="--step-color: #a8c8f0">
-              <div class="step-num">01</div>
-              <div class="step-name">AUDIT</div>
-              <div class="step-detail">
-                Studied top luxury travel brands — Virtuoso, Abercrombie & Kent,
-                Jacada Travel. Found they were content-heavy and complicated.
-                The gap: a clean, editorial approach that lets the destinations
-                do the selling.
-              </div>
+            <div class="flow-diagram">
+              <div class="flow-node">Looked at Virtuoso,<br />Abercrombie &amp; Kent, Jacada</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Stripped to destinations<br />+ proof + one CTA</div>
+              <div class="flow-arrow">&rarr;</div>
+              <div class="flow-node">Built in Framer,<br />slow cinematic scroll</div>
             </div>
-            <div class="process-step" style="--step-color: #7ab0e0">
-              <div class="step-num">02</div>
-              <div class="step-name">STRIP DOWN</div>
-              <div class="step-detail">
-                Removed everything that wasn't essential. No price tables on the
-                homepage. No bullet-point service lists. Just three things:
-                destinations, proof, and a single CTA. Restraint is the luxury
-                signal.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: var(--lime)">
-              <div class="step-num">03</div>
-              <div class="step-name">DESIGN</div>
-              <div class="step-detail">
-                Generous white space, full-bleed travel photography, minimal
-                serif typography. The design deliberately recedes — its job is
-                to frame the imagery, not compete with it. Every layout decision
-                prioritises the photography.
-              </div>
-            </div>
-            <div class="process-step" style="--step-color: #a0d060">
-              <div class="step-num">04</div>
-              <div class="step-name">BUILD</div>
-              <div class="step-detail">
-                Built in Framer with smooth scroll-triggered reveals and
-                mobile-first responsive breakpoints. The animations are slow and
-                cinematic — reinforcing the unhurried luxury tone throughout the
-                browsing experience.
-              </div>
+            <div class="palette-strip" aria-label="Colour palette used">
+              <div class="palette-swatch" style="background: #1a4a80"><span>#1A4A80</span></div>
+              <div class="palette-swatch" style="background: #a8c8f0"><span>#A8C8F0</span></div>
+              <div class="palette-swatch" style="background: #0a2040"><span>#0A2040</span></div>
             </div>
           </div>
         </div>
 
-        <div class="decisions-section">
-          <p class="case-section-label">Design rationale</p>
-          <h2 class="process-title">KEY DECISIONS</h2>
-          <div class="decisions-grid">
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #a8c8f0"></div>
-              <div class="decision-label">Visual Language</div>
-              <div class="decision-title">White Space as a Luxury Signal</div>
-              <div class="decision-why">
-                Luxury brands don't cram information. Space is a deliberate
-                design choice — it signals confidence, restraint, and premium
-                positioning before the visitor reads a single word. The page
-                breathes. That breathing is the brand.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div
-                class="decision-accent"
-                style="background: var(--lime)"
-              ></div>
-              <div class="decision-label">Content Strategy</div>
-              <div class="decision-title">Photography First, Copy Second</div>
-              <div class="decision-why">
-                The destinations are the product. Every section is engineered to
-                showcase travel photography at maximum scale, with minimal copy
-                that supports rather than competes with the visuals. The
-                Maldives image doesn't need a paragraph — it needs room.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #f0c080"></div>
-              <div class="decision-label">Conversion Design</div>
-              <div class="decision-title">No Pricing on the Hero</div>
-              <div class="decision-why">
-                Displaying prices on the homepage of a luxury travel brand is
-                the equivalent of a Michelin-star restaurant putting the menu in
-                the window. The "Book Now" CTA invites a conversation, not a
-                transaction — positioning Voyagé as advisors rather than a
-                booking engine.
-              </div>
-            </div>
-            <div class="decision-card">
-              <div class="decision-accent" style="background: #c4a0ff"></div>
-              <div class="decision-label">Trust Architecture</div>
-              <div class="decision-title">
-                Specific Testimonials Over Star Ratings
-              </div>
-              <div class="decision-why">
-                Luxury travel is high-consideration and high-anxiety. Four named
-                clients with specific, detailed stories ("they sourced a private
-                catamaran with a chef") do far more work than five stars. Each
-                testimonial answers a different hesitation a new client would
-                have.
-              </div>
+        <!-- Beat 01 -->
+        <div class="case-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">01</span>
+            <h3 class="beat-title">Restraint is the luxury signal</h3>
+            <p class="beat-copy">
+              No price tables, no bullet lists, no cluttered nav. Luxury
+              brands don't compete for attention &mdash; they assume they
+              already have it. The page is mostly white space and one
+              photograph at a time.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="case-beat-shot">
+              <img src="assets/voyage.png" alt="Voyage Vacations hero section" />
             </div>
           </div>
         </div>
 
-        <!-- Full-bleed showcase -->
-        <div class="screens-section">
-          <p class="case-section-label">Key screens</p>
-          <h2 class="process-title">THE INTERFACE</h2>
-
-          <div class="voyage-showcase">
-            <div class="voyage-showcase-lead">
-              <img src="assets/voyage.png" alt="Voyage Vacations Hero" />
-              <div class="voyage-showcase-caption">
-                <span class="voyage-caption-num">01</span>
-                <span class="voyage-caption-text">Hero — Luxury Awaits</span>
-              </div>
-            </div>
-            <div class="voyage-showcase-pair">
-              <div class="voyage-showcase-item">
-                <img src="assets/voyage-destinations.png" alt="Destinations" />
-                <div class="voyage-showcase-caption">
-                  <span class="voyage-caption-num">02</span>
-                  <span class="voyage-caption-text">Destinations</span>
-                </div>
-              </div>
-              <div class="voyage-showcase-item">
-                <img src="assets/voyage-packages.png" alt="Featured Packages" />
-                <div class="voyage-showcase-caption">
-                  <span class="voyage-caption-num">03</span>
-                  <span class="voyage-caption-text">Featured Packages</span>
-                </div>
-              </div>
+        <!-- Beat 02 -->
+        <div class="case-beat reverse">
+          <div class="case-beat-text">
+            <span class="beat-num">02</span>
+            <h3 class="beat-title">Let the photography do the selling</h3>
+            <p class="beat-copy">
+              A villa in the Maldives doesn't need a paragraph under it.
+              Every destination gets full-bleed space and minimal copy
+              &mdash; just enough to set the scene, not explain it.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="case-beat-shot">
+              <img src="assets/voyage-destinations.png" alt="Voyage Vacations destinations section" />
             </div>
           </div>
+        </div>
+
+        <!-- Beat 03 -->
+        <div class="case-beat">
+          <div class="case-beat-text">
+            <span class="beat-num">03</span>
+            <h3 class="beat-title">"Book Now" means talk to us, not checkout</h3>
+            <p class="beat-copy">
+              There's no price anywhere on the homepage. The CTA invites a
+              conversation instead of a transaction, which fits how luxury
+              travel sales actually tend to work &mdash; through advisors,
+              not carts.
+            </p>
+          </div>
+          <div class="case-beat-visual">
+            <div class="case-beat-shot">
+              <img src="assets/voyage-packages.png" alt="Voyage Vacations featured packages section" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Closing -->
+        <div class="case-closing">
+          <p>
+            Like Blaze, this one's speculative. The destinations, pricing,
+            and testimonials are invented to make the concept feel real,
+            not pulled from an actual agency I worked with.
+          </p>
         </div>
 
         <div class="case-cta-row">
