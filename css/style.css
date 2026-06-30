@@ -149,6 +149,92 @@ nav.scrolled {
   opacity: 1;
   color: var(--lime);
 }
+
+/* ── Mobile nav toggle + dropdown ─────────────────────────── */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 210;
+}
+.nav-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-mobile-menu {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  list-style: none;
+  background: rgba(7, 7, 7, 0.97);
+  backdrop-filter: blur(16px);
+  flex-direction: column;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    padding 0.35s ease;
+}
+.nav-mobile-menu.open {
+  max-height: 420px;
+  opacity: 1;
+  pointer-events: auto;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.nav-mobile-menu li {
+  border-bottom: 1px solid var(--border);
+}
+.nav-mobile-menu li:last-child {
+  border-bottom: none;
+}
+.nav-mobile-menu a {
+  display: block;
+  padding: 1rem 5vw;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition:
+    opacity 0.2s,
+    color 0.2s;
+}
+.nav-mobile-menu a:hover,
+.nav-mobile-menu a.active {
+  opacity: 1;
+  color: var(--lime);
+}
 .nav-links a.active {
   opacity: 1;
   color: var(--lime);
@@ -1778,6 +1864,9 @@ footer {
   .nav-links {
     display: none;
   }
+  .nav-toggle {
+    display: flex;
+  }
 
   #hero {
     grid-template-columns: 1fr;
@@ -1888,7 +1977,7 @@ footer {
 
   /* ── Section headings ── */
   .section-heading {
-    font-size: clamp(2.8rem, 12vw, 4rem);
+    font-size: clamp(2.8rem, 14vw, 4rem);
   }
 
   /* ── About ── */

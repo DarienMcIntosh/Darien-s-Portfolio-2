@@ -51,6 +51,55 @@ document.addEventListener("DOMContentLoaded", () => {
     { passive: true },
   );
 
+  /* ─── Mobile nav dropdown ────────────────────────────── */
+  const navToggle = document.getElementById("navToggle");
+  const navMobileMenu = document.getElementById("navMobileMenu");
+
+  function closeMobileMenu() {
+    navMobileMenu.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Open menu");
+  }
+
+  function openMobileMenu() {
+    navMobileMenu.classList.add("open");
+    navToggle.setAttribute("aria-expanded", "true");
+    navToggle.setAttribute("aria-label", "Close menu");
+  }
+
+  if (navToggle && navMobileMenu) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = navMobileMenu.classList.contains("open");
+      if (isOpen) closeMobileMenu();
+      else openMobileMenu();
+    });
+
+    navMobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    document.addEventListener("click", (e) => {
+      const isOpen = navMobileMenu.classList.contains("open");
+      if (
+        isOpen &&
+        !navMobileMenu.contains(e.target) &&
+        !navToggle.contains(e.target)
+      ) {
+        closeMobileMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navMobileMenu.classList.contains("open")) {
+        closeMobileMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 960) closeMobileMenu();
+    });
+  }
+
   /* ─── Scroll reveal ──────────────────────────────────── */
   const revealObs = new IntersectionObserver(
     (entries) => {
@@ -68,7 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ─── Active nav highlight ───────────────────────────── */
   const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-links a");
+  const navLinks = document.querySelectorAll(
+    ".nav-links a, .nav-mobile-menu a",
+  );
 
   const sectionObs = new IntersectionObserver(
     (entries) => {
